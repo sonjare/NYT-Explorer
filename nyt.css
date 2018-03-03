@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #ffffe6;
+	font-family: 'Lato', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  flex: 0 1 0%;
+	text-align: center;
+	background-color: #004080;
+	color: white;
+  }
+
+footer {
+  flex: 0 1 0%;
+  background-color: #004080;
+  color: white;
+  text-align: left;
+  font-size: 13px;
+}
+#selector {
+  flex: 0 1 0%;
+  background: palegreen;
+  margin: 0;
+  padding: 15px 0;
+}
+#root {
+  flex: 1;
+  background: palegoldenrod;
+}
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+.master {
+  flex: 1 1 75%;
+  display: flex;
+  flex-direction: column;
+  background: palegoldenrod;
+}
+.details {
+  flex: 0 0 200px;
+  background-color: #f5f5f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  margin: 5px;
+}
+.details > div > h4 {
+  margin: 0;
+  /* background: red; */
+  white-space: wrap;
+  overflow: auto;
+}
+
+.details > div > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details > div > ul > li{
+  padding: 5px 0;
+}
+
+.articlediv {
+  flex: 1;
+	display: flex;
+  flex-direction: column;
+}
+
+.article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.article > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background: white;
+
+}
+.article > div > img {
+  flex: 1;
+  width: 100%;
+}
+.article > div > h3 {
+  flex: 0 1 0%;
+}
+.article > div > p {
+  flex: 0 1 0%;
+}
+#find {
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100px;
+  background-color: #ffffe6;
+  color: black;
+  border: 1px solid #004080;
+}
+
+@media (min-width: 768px) {
+  .articlediv {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .article {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .article {
+    flex: 1 0 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article {
+    flex: 1 0 25%;
+  }
+
+}
