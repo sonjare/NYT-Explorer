@@ -28,13 +28,22 @@ footer {
 }
 #selector {
   flex: 0 1 0%;
-  background: palegreen;
+  background: #ffffcc;
   margin: 0;
   padding: 15px 0;
 }
+#find,#month, #year {
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100px;
+  background-color: #ffffe6;
+  color: black;
+  border: 1px solid #004080;
+}
+
 #root {
   flex: 1;
-  background: palegoldenrod;
+  background: #ffffcc;
 }
 .page {
   display: flex;
@@ -56,7 +65,6 @@ footer {
 }
 .details > div > h4 {
   margin: 0;
-  /* background: red; */
   white-space: wrap;
   overflow: auto;
 }
@@ -74,6 +82,8 @@ footer {
   flex: 1;
 	display: flex;
   flex-direction: column;
+  background: #ffffcc;
+
 }
 
 .article {
@@ -98,14 +108,6 @@ footer {
 }
 .article > div > p {
   flex: 0 1 0%;
-}
-#find {
-  border-radius: 5px;
-  font-size: 15px;
-  width: 100px;
-  background-color: #ffffe6;
-  color: black;
-  border: 1px solid #004080;
 }
 
 @media (min-width: 768px) {

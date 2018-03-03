@@ -71,10 +71,10 @@ function ArticleDetails(props){
     <div>
       <h4>Article Details: </h4>
       <ul>
-        <li>Source: {props.theDoc.source}</li>
-        <li>Snippet: {props.theDoc.snippet}</li>
-        <li>Word Count: {props.theDoc.word_count}</li>
-        <li>Published Date: {props.theDoc.pub_date}</li>
+        <li><b>Source:</b> {props.theDoc.source}</li>
+        <li><b>Snippet:</b> {props.theDoc.snippet}</li>
+        <li><b>Word Count:</b>{props.theDoc.word_count}</li>
+        <li><b>Published Date:</b> {props.theDoc.pub_date}</li>
       </ul>
     </div>
   );
@@ -115,11 +115,11 @@ class ArticlePreview extends React.Component{
   }
   componentDidMount(){
     $.ajax({
-      url: 'http://api.linkpreview.net/?key=123456&q=https://www.google.com',
+      url: 'https://api.linkpreview.net/?key=5a8dbedf066865eae002fe395bc3c2796b36e4942be39&q' + this.props.url,
       method:'GET',
-      data: {
-        'api-key': '5a8dbedf066865eae002fe395bc3c2796b36e4942be39'
-      },
+      // data: {
+      //   'api-key': '5a8dbedf066865eae002fe395bc3c2796b36e4942be39'
+      // },
       success: this.setData
     })
   }
