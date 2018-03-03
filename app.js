@@ -16,7 +16,7 @@ class App extends React.Component{
     console.log(response);
     let urls =[];
     let docs = [];
-    for(var i=0; i<4; i++){
+    for(var i=0; i<20; i++){
       var doc = response.response.docs[i];
       var url = doc.web_url;
       urls.push(url);
