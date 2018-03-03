@@ -16,7 +16,7 @@ class App extends React.Component{
     console.log(response);
     let urls =[];
     let docs = [];
-    for(var i=0; i<20; i++){
+    for(var i=0; i<4; i++){
       var doc = response.response.docs[i];
       var url = doc.web_url;
       urls.push(url);
@@ -115,7 +115,7 @@ class ArticlePreview extends React.Component{
   }
   componentDidMount(){
     $.ajax({
-      url: 'https://api.linkpreview.net/?key=5a8dbedf066865eae002fe395bc3c2796b36e4942be39&q' + this.props.url,
+      url: 'https://api.linkpreview.net/?key=5a8dbedf066865eae002fe395bc3c2796b36e4942be39&q=' + this.props.url,
       method:'GET',
       // data: {
       //   'api-key': '5a8dbedf066865eae002fe395bc3c2796b36e4942be39'
